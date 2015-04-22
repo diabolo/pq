@@ -41,5 +41,21 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'rspec-rails'
+end
+
+group :development do
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+
+  # keep entry in gemfile so we can bundle update, when firefox updates break
+  # installed version
+  gem 'selenium-webdriver'
+
+  gem 'cucumber-debug-steps', git: 'https://github.com/thickpaddy/cucumber-debug-steps.git'
 end
 
