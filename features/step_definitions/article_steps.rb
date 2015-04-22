@@ -24,5 +24,5 @@ When(/^I view the blog$/) do
 end
 
 Then(/^I should see some articles$/) do
-  page.should have_css '.article', count: some
+  expect(page).to have_css '.article', count: some
 end
