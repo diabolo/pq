@@ -5,7 +5,7 @@ module ArticleSH
 
   def create_articles
     some.times do
-      ArticleActor.new.create_article
+      Blog.create_article
     end
   end
 
