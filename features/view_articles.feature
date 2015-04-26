@@ -4,7 +4,6 @@ Feature: View articles
   So I can digest their content
 
 
-  @wip
   Scenario: View articles
     Given there are some articles
     When I view the blog
